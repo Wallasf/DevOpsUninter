@@ -3,20 +3,9 @@
 
 class Animal:
             
-    def __init__(self, age, height, weight, position):
+    def __init__(self, age, weight, height, length, position):
         self.age = age
-        self.height = height
-        self.weight = weight
+        self.height = weight
+        self.weight = height
+        self.length = length
         self.position = position
-        pass
-
-    def move_x(self, ):
-        pass
-
-    def move_y(self, ):
-        pass
-
-    def move_z(self, ):
-        pass
-
-   

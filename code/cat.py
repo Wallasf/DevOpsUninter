@@ -5,9 +5,7 @@ from Mammal import Mammal
 
 
 class Cat(Mammal):
-    def __init__(self):
+    def __init__(self, age, weight, height, length, position):
+        super().__init__(age, weight, height, length, position)
         self.breed = None
-        self.tail_fur = None
-
-    def tail_type(self, ):
-        pass
+        self.tail_length = None

@@ -1,13 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from Animal import Animal
+from code.animal import Animal 
 
 
 class Mammal(Animal):
-    def __init__(self, age, height, weight, position, fur):
-        Animal.__init__(self, age, height, weight, position):
-        self.fur = fur
-
-    def fur_type(self):
-        pass
+    def __init__(self, age, weight, height, length, position):
+        super().__init__(age, weight, height, length, position)
+        self.fur_type = None
+        self.fur_color = None
+        self.eye_color = None
